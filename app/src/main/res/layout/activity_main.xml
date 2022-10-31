@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/walmart_logo"
+        tools:layout_editor_absoluteX="129dp"
+        tools:layout_editor_absoluteY="26dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textFontWeight="@integer/material_motion_duration_long_2"
+        android:text="Sign in to your account" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:text="Email Address (required)" />
+
+    <EditText android:id="@+id/emailAddress"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_height="50dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:text="Password (required)" />
+    <EditText android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_height="50dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forget Password?"
+        android:layout_marginHorizontal="30dp"
+        android:textAlignment="viewEnd"
+        />
+    <Button android:id="@+id/signin_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="100dp"
+        android:text="Sign In"
+        android:textAllCaps="false"
+        android:onClick="onclick_signin"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dont't have an account?"
+        android:layout_marginTop="25dp"
+        android:textAlignment="center"
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create a new account"
+        android:onClick="onclick_createaccount"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="30dp"
+        android:textColor="@color/blue"
+        />
+</LinearLayout>
